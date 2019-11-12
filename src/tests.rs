@@ -31,5 +31,5 @@ fn svg_document() {
         gend!(&mut w)?;
         end!(&mut w)
     });
-    assert!(!r.is_err(), "error occurred during encoding")
+    assert!(r.is_ok(), "error occurred during encoding")
 }
